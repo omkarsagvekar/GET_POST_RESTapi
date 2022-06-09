@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void postRequest() {
         RequestQueue requestQueue = Volley.newRequestQueue(MainActivity.this);
-        String url = "http://192.168.0.101/volley_sample/post_data.php";
+        String url = "http://192.168.0.103/volley_sample/post_data.php";
         StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void sendGetRequest() {
         RequestQueue queue = Volley.newRequestQueue(MainActivity.this);
-        String url = "http://192.168.0.101/volley_sample/get_data.php";
+        String url = "http://192.168.0.103/volley_sample/get_data.php";
         StringRequest request = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
                     @Override
